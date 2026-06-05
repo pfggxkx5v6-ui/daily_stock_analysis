@@ -49,6 +49,8 @@ import sys
 import time
 import uuid
 from datetime import datetime, timezone, timedelta
+import litellm
+litellm._turn_on_debug()  # 启用 LiteLLM 完整调试
 
 from data_provider.base import canonical_stock_code
 from src.webui_frontend import prepare_webui_frontend_assets
